@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         String data="";int temp=0;String description="";String windSpeed="";int cloudPercent=0;
         WeatherFinder finder=new WeatherFinder();
         try {
-            data=finder.execute("http://api.openweathermap.org/data/2.5/weather?q="+editText.getText().toString()+"&APPID=55eb35e0c98226ae5c8a9d92bcd82b9b").get();
+            data=finder.execute("http://api.openweathermap.org/data/2.5/weather?q="+editText.getText().toString()+"&APPID=*********************************").get();
         } catch (ExecutionException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
